@@ -18,10 +18,8 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="og:url" content="https://dsudasinghe.github.io/portfolio/" />
     <meta name="theme-color" content="#0b0814" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0814'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-weight='700' font-size='30' fill='%23c4b5fd'%3ELS%3C/text%3E%3C/svg%3E"
-    />
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/octocat-head-64.png" />
+    <link rel="apple-touch-icon" href="assets/octocat-head-180.png" />
     <link rel="preload" as="image" href="assets/purple-desert/purple-desert.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -218,14 +216,9 @@
         gap: 10px;
       }
       .logo-mark {
-        display: grid;
-        place-items: center;
-        width: 30px;
-        height: 30px;
-        border-radius: 8px;
-        background: linear-gradient(135deg, var(--accent), var(--accent-2));
-        color: var(--on-accent);
-        font-size: 12px;
+        display: block;
+        width: 34px;
+        height: 34px;
       }
       .nav-right {
         display: flex;
@@ -1409,7 +1402,7 @@
 
     <nav id="nav">
       <a href="#hero" class="nav-logo" aria-label="Home">
-        <span class="logo-mark">LS</span>
+        <img class="logo-mark" src="assets/octocat-head.png" width="34" height="34" alt="" />
         <span>lahiru.dev</span>
       </a>
       <div class="nav-right">
