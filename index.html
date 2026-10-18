@@ -713,6 +713,18 @@
       #about {
         padding-bottom: 5rem;
       }
+      .about-head {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+      .octocat {
+        flex: none;
+        width: clamp(150px, 18vw, 220px);
+        height: auto;
+        margin: -2rem 0 -1.5rem;
+      }
       .about-text {
         color: var(--text-secondary);
         line-height: 1.9;
@@ -1316,6 +1328,15 @@
         .proj-tabs {
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
+        .about-head {
+          flex-direction: column-reverse;
+          align-items: flex-start;
+          gap: 1rem;
+        }
+        .octocat {
+          width: 130px;
+          margin: 0;
+        }
         .focus-list {
           grid-template-columns: 1fr;
         }
@@ -1508,9 +1529,14 @@
 
       <!-- ABOUT -->
       <section id="about">
-        <div class="section-head reveal">
-          <p class="section-label">01 / ABOUT</p>
-          <h2 class="section-title">Engineering that's reliable,<br />scalable and built to last.</h2>
+        <div class="section-head about-head">
+          <div class="reveal">
+            <p class="section-label">01 / ABOUT</p>
+            <h2 class="section-title">Engineering that's reliable,<br />scalable and built to last.</h2>
+          </div>
+          <img class="octocat reveal" style="--d: 0.08s" src="assets/octocat-1792305906340.png"
+            width="2000" height="2000" loading="lazy" decoding="async"
+            alt="Octocat in a grey hoodie holding a laptop" />
         </div>
         <div class="about-grid">
           <div class="reveal">
